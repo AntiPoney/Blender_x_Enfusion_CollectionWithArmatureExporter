@@ -1,10 +1,10 @@
 # Blender X Enfusion - collections With Armature Exporter
 
-A Blender add-on export collection to the enfusion default fbx batch folder but with the armature of the scene
+A Blender add-on to export collection(s) to the enfusion default fbx batch folder but with the armature of the scene
 
 ## Features
 
-- 
+- export fbx with armature
 
 ## Installation
 
@@ -20,6 +20,8 @@ A Blender add-on export collection to the enfusion default fbx batch folder but 
 
 ## Usage
 
+
+0. make sure you set the fbx batch export path located in `view 3D` > `sidebar` > `Enfusion Tools` > `Export settings` >  `Batch Export Fbx` 
 1. Select one or more collection(s) in the outliner 
 2. right clic 
 3. Batch Export Fbx - Armature
@@ -27,7 +29,8 @@ A Blender add-on export collection to the enfusion default fbx batch folder but 
 
 ## Notes
 
-
+1. the armature should always be named "Armature"
+2. the armature should be children of scene collection or children of "Skeletons" collection 
 
 ## License
 
