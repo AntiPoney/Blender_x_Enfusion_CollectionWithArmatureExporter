@@ -1,6 +1,6 @@
 # Blender X Enfusion - collections With Armature Exporter
 
-A Blender add-on export collection to the enfusion default fbx batch folder but with the armature of the scene
+A Blender add-on to export collection(s) to the enfusion default fbx batch folder but with the armature of the scene
 
 ## Features
 
