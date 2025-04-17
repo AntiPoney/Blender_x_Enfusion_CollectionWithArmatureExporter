@@ -57,6 +57,7 @@ class EBT_OT_BatchExportFBX_WithArmature(Operator):
                 use_custom_props=True,
                 add_leaf_bones=False,
                 bake_anim=False
+                #use_mesh_modifiers=True,
             )
 
             bpy.ops.object.select_all(action='DESELECT')
