@@ -7,7 +7,7 @@ from bpy.props import StringProperty, BoolProperty
 class EBT_OT_BatchExportFBX_WithArmature(Operator):
     bl_idname = "collection.batch_export_fbx_with_armature"
     bl_label = "Batch Export FBX (with Armature)"
-    bl_description = "Export selected collections with the root armature"
+    bl_description = "Export selected collections with the Armature named 'Armature'"
     bl_options = {"REGISTER", "UNDO"}
 
     @classmethod
@@ -35,7 +35,7 @@ class EBT_OT_BatchExportFBX_WithArmature(Operator):
                     break
 
         if not root_armature:
-            self.report({'ERROR'}, "No armature named 'Armature' found in Scene or 'Skeletons'.")
+            self.report({'ERROR'}, "No armature named 'Armature' found in Scene or 'Skeletons' collection.")
             return {'CANCELLED'}
 
         for coll in context.selected_ids:
